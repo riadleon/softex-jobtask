@@ -1,9 +1,14 @@
 import React from 'react';
+import CalendarLayout from './CalendarLayout';
+import CallToAction from './CallToAction';
+import Social from './Social';
 
 const Home = () => {
     return (
         <div>
-            Home
+            <CalendarLayout />
+            <Social />
+            <CallToAction />
         </div>
     );
 };
