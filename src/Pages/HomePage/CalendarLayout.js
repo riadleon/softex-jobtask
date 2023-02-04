@@ -7,18 +7,18 @@ import { FaClock } from 'react-icons/fa';
 
 const CalendarLayout = () => {
     return (
-        <div className='flex items-center justify-around bg-slate-100'>
+        <div className='grid grid-cols-2 bg-white w-3/5 h-2/5 ml-72 mt-5 mb-5'>
 
-            <article className="w-1/4  mx-auto space-y-12 border-gray-500 bg-white h-2/3">
+            <article className="w-3/5 mx-auto space-y-12 border-gray-500 shadow-amber-300 mt-10">
                 <div className="w-full mx-auto text-center">
 
-                    <img className='h-20' src={logo} alt="" />
+                    <img className='h-20 ' src={logo} alt="" />
 
                 </div>
                 <div className="pt-12 border-t dark:border-gray-700">
                     <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
 
-                        <div className="flex flex-col p-8">
+                        <div className="flex flex-col">
                             <h1 className='text-gray-600'>Hyperlink Infosystem</h1>
                             <h4 className="text-2xl font-bold">Introduction Call With <br /> Hyperlink Infosystem</h4><br />
                             <div className='flex items-center'>
@@ -42,8 +42,8 @@ const CalendarLayout = () => {
                 </div>
             </article>
 
-            <div className='mr-40 w-1/4  mx-auto space-y-12 border-gray-500 bg-white h-2/3'>
-                <h2 className='text-xl font-bold'>Select Date & Time</h2>
+            <div className='w-96 border-gray-500 mt-20 bg-white h-96'>
+                <h2 className='text-xl font-bold ml-5'>Select Date & Time</h2>
                 <DayPicker />
             </div>
         </div>
